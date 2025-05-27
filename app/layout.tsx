@@ -51,7 +51,7 @@ export default function RootLayout({
                   ctaText: "Chat with us",
                   borderRadius: "25",
                   autoShow: false,
-                  phoneNumber: "918979536388"
+                  phoneNumber: "919286300847"
                 }
               };
               s.onload = function() {
