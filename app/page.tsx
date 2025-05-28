@@ -1,4 +1,14 @@
 // app/page.tsx
+import WhyChoose from './components/WhyChoose';
+import HowItWorks from './components/HowItWorks';
+import LiveGames from './components/LiveGames';
+import TelegramCTA from './components/TelegramCTA';
+import Testimonials from './components/Testimonials';
+import TrustedBy from './components/TrustedBy';
+import PrivacyGuarantee from './components/PrivacyGuarantee';
+import FAQ from './components/FAQ';
+import Contact from './components/Contact';
+import SectionWrapper from './components/SectionWrapper';
 import Image from 'next/image'
 
 export default function Home() {
@@ -67,17 +77,28 @@ export default function Home() {
           )
         )}
       </div>
-
+      <TrustedBy/>
       {/* Disclaimer & About */}
       <div className="text-xs text-gray-400 text-center max-w-md pt-2 space-y-2">
         <p>
           Disclaimer: This Website is only for 18+ users. If you are from Telangana, Orissa, Assam, Sikkim and Nagaland, please leave the website immediately. Be aware of fraudsters, we only deal via WhatsApp.
         </p>
-        <p>
-          About: Bazigar Book has served 40k users for 2+ years with trust and 24/7 service in fantasy
-          gaming.
-        </p>
       </div>
+
+      <WhyChoose />
+      <HowItWorks/>
+      <LiveGames/>
+      <TelegramCTA/>
+      <Testimonials/>
+      <PrivacyGuarantee/>
+      <FAQ/>
+      <Contact/>
+
+
+          {/* <SectionWrapper title="Custom Section">
+            <p className="text-center">Here’s some dynamic content!</p>
+      </SectionWrapper>  */}
+
 
       {/* Footer */}
       <p className="text-yellow-500 pt-1 text-sm text-center">
