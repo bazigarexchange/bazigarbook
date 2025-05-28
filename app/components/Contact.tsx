@@ -21,6 +21,7 @@ export default function Contact() {
           >
             <FaWhatsapp className="text-xl" /> WhatsApp Support
           </a>
+          
           <a
             href="https://t.me/Bazigarexch"
             target="_blank"
