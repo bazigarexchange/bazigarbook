@@ -8,7 +8,6 @@ import TrustedBy from './components/TrustedBy';
 import PrivacyGuarantee from './components/PrivacyGuarantee';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
-import SectionWrapper from './components/SectionWrapper';
 import Image from 'next/image'
 
 export default function Home() {
