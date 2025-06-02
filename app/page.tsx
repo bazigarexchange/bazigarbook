@@ -9,6 +9,7 @@ import PrivacyGuarantee from './components/PrivacyGuarantee';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Image from 'next/image'
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -93,12 +94,7 @@ export default function Home() {
       <FAQ/>
       <Contact/>
 
-
-          {/* <SectionWrapper title="Custom Section">
-            <p className="text-center">Here’s some dynamic content!</p>
-      </SectionWrapper>  */}
-
-
+      <Footer/>
       {/* Footer */}
       <p className="text-yellow-500 pt-1 text-sm text-center">
         <a
@@ -110,6 +106,7 @@ export default function Home() {
           WWW.BAZIGAREXCHANGE.COM
         </a>
       </p>
+      
     </main>
   )
 }
