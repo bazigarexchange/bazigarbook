@@ -17,7 +17,7 @@ export default function Footer() {
             <a href="https://www.facebook.com/share/19AL8VHBRp/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
               <FaFacebookF />
             </a>
-            <a href="https://t.me/Bazigarexch" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <a href="http://t.me/Bazigarbook777" target="_blank" rel="noopener noreferrer" className="hover:text-white">
               <FaTelegramPlane />
             </a>
           </div>

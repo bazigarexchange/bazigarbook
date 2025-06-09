@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* Tagline */}
       <p className="text-center text-gray-300 text-lg">
-        IMAANDARI EK MEHANGA SHOK HAI
+        IMANDARI EK MEHNGA SHOK HAI
       </p>
       <p className="text-sm text-yellow-200 uppercase tracking-wider">
         Trusted Since 2 Years

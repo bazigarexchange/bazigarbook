@@ -12,7 +12,7 @@ export default function TelegramCTA() {
         Get expert betting tips, exclusive bonuses, and real-time updates by joining our Telegram community.
       </p>
       <a
-        href="https://t.me/+Eq08Z7KtXC9iNGQ1"
+        href="http://t.me/Bazigarbook777"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg transition"
