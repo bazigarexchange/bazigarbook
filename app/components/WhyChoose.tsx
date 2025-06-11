@@ -7,7 +7,7 @@ export default function WhyChoose() {
     "Trusted by 10,000+ Users",
     "Fast ID Creation",
     "24/7 Customer Support",
-    "Instant Withdrawals",
+    "Instant refill & payouts",
     "Private & Secure",
   ];
 

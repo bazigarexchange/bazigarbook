@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import Script from 'next/script'
 
+
 export const metadata: Metadata = {
   title: 'Bazigar Book',
   description: 'Trusted fantasy platform',
@@ -68,10 +69,8 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=1599005600766091&ev=PageView&noscript=1"
           />
         </noscript>
-        
       </head>
 
-      
       <body className="min-h-screen bg-black text-white relative">
         {children}
 
@@ -90,7 +89,7 @@ export default function RootLayout({
                 enabled: true,
                 chatButtonSetting: {
                   backgroundColor: "#00e785",
-                  ctaText: "Get ld Now!",
+                  ctaText: "Start Playing Today!",
                   borderRadius: "25",
                   marginLeft: "0",
                   marginRight: "20",
@@ -105,7 +104,7 @@ export default function RootLayout({
                   welcomeText: "Hi there!\\nHow can I help you?",
                   messageText: "Hello, %0A I want to create new I'D",
                   backgroundColor: "#00e785",
-                  ctaText: "Get ld Now!",
+                  ctaText: "Start Playing Today!",
                   borderRadius: "25",
                   autoShow: false,
                   phoneNumber: "919286300847"

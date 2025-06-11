@@ -14,7 +14,7 @@ export default function PrivacyGuarantee() {
         </p>
         <p className="mb-4">
           We maintain 100% fair play on all our games. Every game is monitored and audited to ensure transparency,
-          unbiased outcomes, and a safe betting environment.
+          unbiased outcomes, and a safe environment.
         </p>
         <p>
           You can play with full confidence, knowing that your data and your gameplay are protected at every level.
