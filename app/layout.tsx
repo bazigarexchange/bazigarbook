@@ -89,7 +89,7 @@ export default function RootLayout({
                 enabled: true,
                 chatButtonSetting: {
                   backgroundColor: "#00e785",
-                  ctaText: "Start Playing Today!",
+                  ctaText: "Start Playing Now",
                   borderRadius: "25",
                   marginLeft: "0",
                   marginRight: "20",
@@ -104,7 +104,7 @@ export default function RootLayout({
                   welcomeText: "Hi there!\\nHow can I help you?",
                   messageText: "Hello, %0A I want to create new I'D",
                   backgroundColor: "#00e785",
-                  ctaText: "Start Playing Today!",
+                  ctaText: "Start Playing Now",
                   borderRadius: "25",
                   autoShow: false,
                   phoneNumber: "919286300847"

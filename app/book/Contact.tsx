@@ -35,7 +35,7 @@ export default function ContactUs() {
 
         <div className="text-zinc-400 text-sm">
           📍 Headquarters: Mumbai, India <br />
-          📞 +91 89795 36388 <br />
+          📞 +1 534 253 4883 <br />
           © {new Date().getFullYear()} Bazigar Book. All rights reserved.
         </div>
       </div>
