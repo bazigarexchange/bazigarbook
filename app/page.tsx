@@ -1,20 +1,23 @@
 // app/page.tsx
-import WhyChoose from './components/WhyChoose';
-import HowItWorks from './components/HowItWorks';
-import LiveGames from './components/LiveGames';
-import TelegramCTA from './components/TelegramCTA';
-import Testimonials from './components/Testimonials';
+import WhyChoose from './book/WhyChoose';
+import HowItWorks from './book/HowItWorks';
+import LiveGames from './book/LiveGames';
+import TelegramCTA from './book/TelegramCTA';
+import Testimonials from './book/Testimonials';
 import TrustedBy from './components/TrustedBy';
-import PrivacyGuarantee from './components/PrivacyGuarantee';
-import FAQ from './components/FAQ';
-import Contact from './components/Contact';
+import FAQ from './book/FAQ';
+import Contact from './book/Contact';
 import Image from 'next/image'
-import Footer from './components/Footer';
+import Link from 'next/link';
+import PrivacyFairPlay from './book/PrivacyFairPlay';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white font-sans p-4 flex flex-col items-center space-y-6">
-      {/* Circular Logo */}
+    <main>
+    <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 py-12 bg-gradient-to-b from-black via-zinc-900 to-black text-white">
+      {/* Optional background effect */}
+      <div className="absolute inset-0 opacity-10 bg-[url('/casino-bg.jpg')] bg-cover bg-center pointer-events-none"></div>
+
       <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-yellow-400">
         <Image
           src="/bazigarlogo.jpg" // <--- Place your logo file in public/logo.png
@@ -25,87 +28,52 @@ export default function Home() {
         />
       </div>
 
-      {/* Title */}
-      <h1 className="text-4xl sm:text-5xl font-bold text-yellow-400 tracking-wide text-center">
-        BAZIGAR BOOK
-      </h1>
+      <div className="relative z-10 max-w-4xl">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Bazigar Book – <span className="text-yellow-400">India’s Trusted Skill Gaming Hub</span>
+        </h1>
 
-      {/* Tagline */}
-      <p className="text-center text-gray-300 text-lg">
-        IMANDARI EK MEHNGA SHOK HAI
-      </p>
-      <p className="text-sm text-yellow-200 uppercase tracking-wider">
-        Trusted Since 2 Years
-      </p>
+        <p className="text-xl italic text-zinc-300 mb-6">
+          Imaandari Ek Mehenga Shauk Hai
+        </p>
 
-      {/* WhatsApp CTA */}
-        <a
-          href="https://wa.me/919286300847?text=Hi%20Get%20New%20%20ID."
+        <p className="text-lg md:text-xl mb-8 text-zinc-200">
+          Join over <strong>20,000+ players</strong> sharing their love for strategy, quizzes, and fantasy sports. Fast signup, secure platform, 24×7 support!
+        </p>
+
+        <Link
+          href="https://wa.me/918979536388"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-green-500 text-white font-semibold px-6 py-3 rounded-full text-lg flex items-center space-x-3 animate-pulse hover:scale-105 hover:shadow-lg transition-transform duration-200"
-          >
-          <img
-            src="/WhatsApp.svg.webp"
-            alt="Logo"
-            className="w-6 h-6 rounded-full object-cover"
-          />
-          <span>GET I’D NOW</span>
-        </a>
+          className="inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition shadow-lg"
+        >
+          🟢 Get Your Player ID Now
+        </Link>
 
-      {/* Refill/Service Info */}
-      <div className="space-y-2 text-center">
-        <div className="bg-yellow-400 text-black px-4 py-2 text-sm font-bold">
-          24*7 DEPOSITE
-        </div>
-        <div className="bg-yellow-400 text-black px-4 py-2 text-sm font-bold">
-          24*7 WITHDRAWL
-        </div>
-      </div>
-
-      {/* Game Icons */}
-      <div className="flex flex-wrap justify-center gap-4 pt-2">
-        {['🏏 Cricket', '⚽ Football', '🎾 Tennis', '🃏 Teen Patti', '🎰 Casino', '🎯 Roulette'].map(
-          (label) => (
-            <div
-              key={label}
-              className="flex flex-col items-center text-center text-xs text-gray-300"
-            >
-              <div className="text-3xl">{label.split(' ')[0]}</div>
-              <div>{label.split(' ')[1]}</div>
-            </div>
-          )
-        )}
-      </div>
-      <TrustedBy/>
-      {/* Disclaimer & About */}
-      <div className="text-xs text-gray-400 text-center max-w-md pt-2 space-y-2">
-        <p>
-          Disclaimer: This Website is only for 18+ users. If you are from Telangana, Orissa, Assam, Sikkim and Nagaland, please leave the website immediately. Be aware of fraudsters, we only deal via WhatsApp.
+        <p className="mt-6 text-sm text-zinc-400">
+          ⚡ Instant refill & payouts • 🎁 ₹300 joining bonus • 🔐 Secure & verified
         </p>
       </div>
+          {/* Disclaimer & About */}
+      <div className="text-xs text-gray-400 text-center max-w-md pt-2 space-y-2">
+        <p>
+          Disclaimer: Players must be 18+ years old.
+Users from Telangana, Orissa, Assam, Sikkim, Nagaland are restricted.
+Our services are available only via WhatsApp for real security and clarity.
+        </p>
+      </div>
+    </section>
 
-      <WhyChoose />
-      <HowItWorks/>
-      <LiveGames/>
-      <TelegramCTA/>
-      <Testimonials/>
-      <PrivacyGuarantee/>
-      <FAQ/>
-      <Contact/>
+    <TrustedBy/>
+    <HowItWorks/>
+    <WhyChoose/>
+    <LiveGames/>
+    <TelegramCTA/>
+    <Testimonials/>
+    <PrivacyFairPlay/>
+    <FAQ/>
+    <Contact/>
 
-      <Footer/>
-      {/* Footer */}
-      <p className="text-yellow-500 pt-1 text-sm text-center">
-        <a
-          href="https://www.bazigarexchange.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:text-yellow-300 transition-colors"
-          >
-          WWW.BAZIGAREXCHANGE.COM
-        </a>
-      </p>
       
     </main>
   )
