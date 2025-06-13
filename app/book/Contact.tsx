@@ -11,7 +11,7 @@ export default function ContactUs() {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
           <a
-            href="https://wa.me/918979536388"
+            href="https://wa.me/919286300847"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full transition"
