@@ -6,7 +6,7 @@ export default function BonusPopup() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShow(true), 5000); // 4 seconds delay
+    const timer = setTimeout(() => setShow(true), 6000); // 6 seconds delay
     return () => clearTimeout(timer);
   }, []);
 
@@ -17,14 +17,13 @@ export default function BonusPopup() {
       <div className="bg-white max-w-sm p-6 rounded-2xl shadow-lg text-center relative animate-bounce">
         <h2 className="text-2xl font-bold mb-2 text-green-600">🎉 Limited Time Offer!</h2>
         <p className="text-gray-700 mb-4">
-          Get an <strong>extra 2% – 4% joining bonus</strong><br />
+          Get an <strong>extra 3% – 10% joining bonus</strong><br />
           when you sign up Now on WhatsApp!
         </p>
         <a
-          href="https://wa.me/919286300847"
-          className="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-full transition"
-        >
-          Claim Now on WhatsApp
+            href="https://wa.me/919286300847?text=Hey%2C%20I%20want%20to%20claim%20my%203%25%20joining%20bonus!"
+            className="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-full transition">
+            Claim Now on WhatsApp
         </a>
         <button
           onClick={() => setShow(false)}
