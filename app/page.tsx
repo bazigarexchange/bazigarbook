@@ -10,10 +10,12 @@ import Contact from './book/Contact';
 import Image from 'next/image'
 import Link from 'next/link';
 import PrivacyFairPlay from './book/PrivacyFairPlay';
+import BonusPopup from './components/BonusPopup';
 
 export default function Home() {
   return (
     <main>
+       <BonusPopup />
     <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 py-12 bg-gradient-to-b from-black via-zinc-900 to-black text-white">
       {/* Optional background effect */}
       <div className="absolute inset-0 opacity-10 bg-[url('/casino-bg.jpg')] bg-cover bg-center pointer-events-none"></div>
