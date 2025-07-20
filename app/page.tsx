@@ -4,7 +4,7 @@ import HowItWorks from './book/HowItWorks';
 import LiveGames from './book/LiveGames';
 import TelegramCTA from './book/TelegramCTA';
 import Testimonials from './book/Testimonials';
-import TrustedBy from './components/TrustedBy';
+// import TrustedBy from './components/TrustedBy';
 import FAQ from './book/FAQ';
 import Contact from './book/Contact';
 import Image from 'next/image'
