@@ -53,7 +53,7 @@ export default function Home() {
         </Link>
 
         <p className="mt-6 text-sm text-zinc-400">
-          ⚡ Instant refill & payouts • 🎁 ₹300 joining bonus • 🔐 Secure & verified
+          ⚡ Instant refill & payouts • 🎁 3% - 10% joining bonus • 🔐 Secure & verified
         </p>
       </div>
           {/* Disclaimer & About */}
@@ -66,7 +66,7 @@ Our services are available only via WhatsApp for real security and clarity.
       </div>
     </section>
 
-    <TrustedBy/>
+    {/* <TrustedBy/> */}
     <HowItWorks/>
     <WhyChoose/>
     <LiveGames/>

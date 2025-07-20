@@ -6,7 +6,7 @@ export default function BonusPopup() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShow(true), 6000); // 6 seconds delay
+    const timer = setTimeout(() => setShow(true), 12000); // 6 seconds delay
     return () => clearTimeout(timer);
   }, []);
 
